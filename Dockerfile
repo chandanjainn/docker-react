@@ -13,6 +13,6 @@ RUN npm run build
 
 
 # RUN Phase
-FROM ngninx
+FROM nginx
 EXPOSE 3000
 COPY --from=0 /app/build /usr/share/nginx/html
